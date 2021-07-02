@@ -1,0 +1,44 @@
+cis-tests:
+  roles:
+    5.1.1:
+      accepted: []
+      resources: ['*']
+      verbs: ['*']
+    5.1.2:
+      accepted: ['secrets-manager']
+      resources: ['secrets']
+      verbs: ['*','get','list']
+    5.1.3:
+      accepted: []
+      resources:
+      - secrets
+      - pods
+      - deployments
+      - daemonsets
+      - statefulsets
+      - replicationcontrollers
+      - replicasets
+      - cronjobs
+      - jobs
+      - roles
+      - clusterroles
+      - rolebindings
+      - clusterrolebindings
+      - users
+      - groups
+      verbs: ['*']
+    5.1.4:
+      accepted: []
+      resources:
+      - pods
+      - deployments
+      - daemonsets
+      - statefulsets
+      - replicationcontrollers
+      - replicasets
+      - jobs
+      - cronjobs
+      verbs: ['create','update']
+  service-accounts:
+    5.1.6:
+      accepted: []
