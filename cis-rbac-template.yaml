@@ -1,0 +1,34 @@
+cis-results:
+  5.1.1:
+    description: Ensure that the cluster-admin role is only used where required (Manual)
+    ClusterRoles: 
+      - cluster-admin
+    Roles: []
+    ClusterRoleBindings: {}
+    RoleBindings: {}
+    type: rbac
+  5.1.2:
+    description: Minimize access to secrets (Manual)
+    ClusterRoles: []
+    Roles: []
+    ClusterRoleBindings: {}
+    RoleBindings: {}
+    type: rbac
+  5.1.3:
+    description: Minimize wildcard use in Roles and ClusterRoles (Manual)
+    ClusterRoles: []
+    Roles: []
+    ClusterRoleBindings: {}
+    RoleBindings: {}
+    type: rbac
+  5.1.4:
+    description: Minimize access to create pods (Manual)
+    ClusterRoles: []
+    Roles: []
+    ClusterRoleBindings: {}
+    RoleBindings: {}
+    type: rbac
+  5.1.6:
+    description: Ensure that Service Account Tokens are only mounted where necessary (Manual)
+    pods: []
+    type: ServiceAccount
